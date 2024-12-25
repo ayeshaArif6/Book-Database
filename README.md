@@ -3,7 +3,7 @@ A book database that a user can acess and alter using a java-based application.
 
 
 ## Project Overview
-This project allows a user to insert information regarding any number of books in an SQL database. SQL queries can be made which add and change the entered information through a java based UI-application. The user can interact with the database through this interface and can extend it as needed. This project uses the MySQL Command Line Client to accept the user queries along with the workbench driver.
+This project allows a user to insert information regarding any number of books in an SQL database. SQL queries can be made which add and change the entered information through a java based UI-application. The user can interact with the database through this interface and can extend it as needed. This project uses the MySQL Command Line Client to accept the user queries along with the workbench driver. Once the database is created, the user is able to enter queries to add, update, or delete books and authors in the database. It can also list specific books from an author in the database and list all reviews regarding a book as well. The idea is similar to a libraray database but is not on as big a scale. 
 
 
 ## Database setup
@@ -81,11 +81,11 @@ Follow the steps below to set up the database:
     ```
     ```bash
       INSERT INTO USER
-      VALUES (3001, 'Ayesha', 'Arif', 'aarif6@asu.edu', NULL),
-             (3002, 'Galin', 'Todorov', 'gtodorov@asu.edu', NULL),
-             (3003, 'Gulsum', 'Islamoglu', 'gislamog@asu.edu', NULL),
-             (3004, 'Rajvirsinh', 'Jadeja', 'rjadeja@asu.edu', NULL),
-             (3005, 'Abdallah', 'Moubayed', 'amoubaye@asu.edu', NULL)
+      VALUES (3001, 'John', 'Doe', 'JohnDoe@email.com', NULL),
+             (3002, 'Lance', 'Orion', 'LanceOrion@email.com', NULL),
+             (3003, 'Darcy', 'Vega', 'DarcyVega@email.com', NULL),
+             (3004, 'Gabriel', 'Nox', 'GabrielNox@email.com', NULL),
+             (3005, 'Tory', 'Smith', 'TorySmith@email.com', NULL)
     ```
     ```bash
        INSERT INTO BUYS
@@ -133,12 +133,25 @@ Follow the steps below to set up the database:
     ```
 4. Replace "root" and "password" with your own username and password.
 
+
 ## Example Queries:
-   ```bash
+1.   ```bash
         Insert Author:
         2006 ‘J.K’ ‘Rowling’ 1965
-   ```
-   ```bash
+      ```
+2.    ```bash
         Update Book:
         1005 ‘Red Dragon’
-   ```
+      ```
+3.    ```bash
+        Delete Author:
+        2007
+      ```
+4.    ```bash
+        List Books from Specific Author:
+        Dumas
+      ```
+5.    ```bash
+        List Reviews From Specific Book:
+        One Hundred Years of Solitude
+      ```
