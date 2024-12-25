@@ -1,8 +1,10 @@
 # BookDatabase
 A book database that a user can acess and alter using a java-based application.
 
+
 ## Project Overview
 This project allows a user to insert information regarding any number of books in an SQL database. SQL queries can be made which add and change the entered information through a java based UI-application. The user can interact with the database through this interface and can extend it as needed. This project uses the MySQL Command Line Client to accept the user queries along with the workbench driver.
+
 
 ## Database setup
 Follow the steps below to set up the database:
@@ -110,6 +112,7 @@ Follow the steps below to set up the database:
              (2005, 'Dan', 'Brown', 1962);
     ```
 
+
 ## Project Quickstart:
 1. Open the command prompt in the folder of the source code once the repo has been cloned.
 2. Compile the code by running:
@@ -129,3 +132,9 @@ Follow the steps below to set up the database:
        include the ‘.;’ before the path).
     ```
 4. Replace "root" and "password" with your own username and password.
+
+## Example Queries:
+ ```bash
+       Insert Author:
+       2006 ‘J.K’ ‘Rowling’ 1965
+ ```
