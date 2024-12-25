@@ -9,8 +9,8 @@ Follow the steps below to start the project;
 1. Open MySQL Command Line Client.
 2. Create Database:
      ```bash
-     CREATE DATABASE deliverable4;
-     USE deliverable4;
+      CREATE DATABASE deliverable4;
+      USE deliverable4;
     ```
 3. Create Table Statements:
      ```bash
@@ -20,5 +20,51 @@ Follow the steps below to start the project;
       LastName VARCHAR(20) NOT NULL,
       DOBINT,
       PRIMARY KEY (AuthorID)
+      );
+    ```
+    ```bash
+      CREATE TABLE BOOK(
+      BookID INT NOT NULL,
+      Title VARCHAR(100)NOT NULL,
+      Genre VARCHAR(20) NOT NULL,
+      PublYear INT NOT NULL,
+      AuthorID INT NOT NULL,
+      PRIMARY KEY (BookID),
+      FOREIGN KEY (AuthorID) REFERENCES AUTHOR (AuthorID)
+      ON UPDATE CASCADE ON delete CASCADE
+      );
+    ```
+    ```bash
+      CREATE TABLE USER(
+      UserID INT NOT NULL,
+      FirstName VARCHAR(20) NOT NULL,
+      LastName VARCHAR(20) NOT NULL,
+      Email VARCHAR(40),
+      Phone INT(10),
+      PRIMARY KEY (UserID)
+      );
+    ```
+    ```bash
+      CREATE TABLE REVIEW (
+      ReviewID INT NOT NULL,
+      Rating INT NOT NULL,
+      Review_Date DATE ,
+      ReviewText VARCHAR(255),
+      BookID INT NOT NULL,
+      UserID INT NOT NULL,
+      PRIMARY KEY (ReviewID),
+      FOREIGN KEY (BookID) REFERENCES BOOK (BookID),
+      FOREIGN KEY (UserID) REFERENCES USER (UserID)
+      ON DELETE CASCADE ON UPDATE CASCADE
+      );
+    ```
+    ```bash
+      CREATE TABLE BUYS (
+      UserID INT NOT NULL,
+      BookID INT NOT NULL,
+      PRIMARY KEY (UserID, BookID),
+      FOREIGN KEY (UserID) REFERENCES USER (UserID),
+      FOREIGN KEY (BookID) REFERENCES BOOK (BookID)
+      ON DELETE CASCADE
       );
     ```
