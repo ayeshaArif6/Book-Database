@@ -5,6 +5,9 @@ A book database that a user can acess and alter using a java-based application.
 ## Project Overview
 This project allows a user to insert information regarding any number of books in an SQL database. SQL queries can be made which add and change the entered information through a java based UI-application. The user can interact with the database through this interface and can extend it as needed. This project uses the MySQL Command Line Client to accept the user queries along with the workbench driver. Once the database is created, the user is able to enter queries to add, update, or delete books and authors in the database. It can also list specific books from an author in the database and list all reviews regarding a book as well. The idea is similar to a libraray database but is not on as big a scale. 
 
+## Development Stack
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
 
 ## Database setup
 Follow the steps below to set up the database:
