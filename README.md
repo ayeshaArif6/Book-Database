@@ -134,7 +134,11 @@ Follow the steps below to set up the database:
 4. Replace "root" and "password" with your own username and password.
 
 ## Example Queries:
- ```bash
-       Insert Author:
-       2006 ‘J.K’ ‘Rowling’ 1965
- ```
+   ```bash
+        Insert Author:
+        2006 ‘J.K’ ‘Rowling’ 1965
+   ```
+   ```bash
+        Update Book:
+        1005 ‘Red Dragon’
+   ```
