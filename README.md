@@ -155,3 +155,10 @@ Follow the steps below to set up the database:
         List Reviews From Specific Book:
         One Hundred Years of Solitude
       ```
+
+
+## Software Requirements
+Ensure:
+1. Java version 18.0.1.1 or newer is used.
+2. JDK 8 or newer is installed.
+3. MySQL 5.7 or newer is used. 
