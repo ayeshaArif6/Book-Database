@@ -114,7 +114,7 @@ Follow the steps below to set up the database:
 1. Open the command prompt in the folder of the source code once the repo has been cloned.
 2. Compile the code by running:
     ```bash
-     javac gui.java
+      javac gui.java
     ```
 3. Once the classes are generated, run the following in the prompt:
     ```bash
@@ -122,9 +122,10 @@ Follow the steps below to set up the database:
        ".;D:\Downloads\mysql-connector-j-8.3.0\mysql-connector-j-8.3.0\mysql-connecto
        r-j-8.3.0.jar" gui "jdbc:mysql://localhost:3306/deliverable4" "root" "password"
        "com.mysql.cj.jdbc.Driver"
+
+       (Replace the
+       “D:\Downloads\mysql-connector-j-8.3.0\mysql-connector-j-8.3.0\mysql-connector-j-8.3.0.j
+       ar” with the path to your actual MySQL JDBC driver jar file. HOWEVER, ensure you
+       include the ‘.;’ before the path).
     ```
-    (Replace the
-    “D:\Downloads\mysql-connector-j-8.3.0\mysql-connector-j-8.3.0\mysql-connector-j-8.3.0.j
-    ar” with the path to your actual MySQL JDBC driver jar file. HOWEVER, ensure you
-    include the ‘.;’ before the path).
 4. Replace "root" and "password" with your own username and password.
